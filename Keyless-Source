@@ -1,1 +1,11 @@
+local function createNotification(message)
+    local StarterGui = game:GetService("StarterGui")
+    StarterGui:SetCore("SendNotification", {
+        Title = "Notification",
+        Text = message,
+        Duration = 5
+    })
+end
+
+createNotification("Made by Folly")
 
